@@ -1,6 +1,6 @@
 var vblog={
-        login:'vik',
+        login:'foster',
 		replieLink:'blogs',
-		followTag:'ru--otkrytyij-kod',
+		followTag:'ru--svoboda',
 
 };	
