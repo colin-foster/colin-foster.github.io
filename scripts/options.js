@@ -1,6 +1,6 @@
 var vblog={
         login:'foster',
-		replieLink:'blogs',
+		replieLink:'free',
 		followTag:'ru--svoboda',
 
 };	
