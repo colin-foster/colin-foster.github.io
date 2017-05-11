@@ -1,6 +1,6 @@
 var vblog={
         login:'foster',
-		replieLink:'yeijforiya-i-vostorg-v-sochi-chastx-i',
+		replieLink:'paket-konstruktivnykh-predlozhenii',
 		followTag:'ru--blokcheijn',
 
 };	
