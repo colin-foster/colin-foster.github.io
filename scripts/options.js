@@ -1,6 +1,6 @@
 var vblog={
         login:'foster',
-		replieLink:'paket-konstruktivnykh-predlozhenii',
+		replieLink:'pochemu-norvezhskii-investor-prav',
 		followTag:'ru--blokcheijn',
 
 };	
