@@ -1,6 +1,6 @@
 var vblog={
         login:'foster',
-		replieLink:'pochemu-norvezhskii-investor-prav',
-		followTag:'ico',
+		replieLink:'den-rozhdeniya',
+		followTag:'ru--pxesa',
 
 };	
