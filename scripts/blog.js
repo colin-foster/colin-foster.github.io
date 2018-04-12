@@ -2,7 +2,7 @@
 // Для главной страницы
 if(indexPage){
 var posts=[],relt=[],rep=[],hasimg;
-steem.api.getBlog(vblog.login, 0, 3, function(err, result) {
+golos.api.getBlog(vblog.login, 0, 3, function(err, result) {
 for (var i = 0; i < result.length; i++) {
      var z = result[i].comment,
 	 m = JSON.parse(z.json_metadata),
@@ -22,7 +22,7 @@ for (var i = 0; i < result.length; i++) {
    });	
 
 
-steem.api.getDiscussionsByCreated({"tag":vblog.followTag,"limit":"3"}, function(err, result) {
+golos.api.getDiscussionsByCreated({"tag":vblog.followTag,"limit":"3"}, function(err, result) {
   for (var i = 0; i < result.length; i++) {
   var r = result[i];
   
@@ -32,7 +32,7 @@ steem.api.getDiscussionsByCreated({"tag":vblog.followTag,"limit":"3"}, function(
 	 })
  }
 });
-steem.api.getContentReplies(vblog.login, vblog.replieLink, function(err, result) {
+golos.api.getContentReplies(vblog.login, vblog.replieLink, function(err, result) {
 
 	
 	for(var i = result.length;i--;)	{
@@ -73,7 +73,7 @@ var replies = new Vue({
 // Для страницы блога
 if(isBlog){
 var postslist=[],comm=[],hasimg,expand=false;
-steem.api.getBlog(vblog.login, 0, 100, function(err, result) {
+golos.api.getBlog(vblog.login, 0, 100, function(err, result) {
 	
 for (var i = 0; i < result.length; i++) {
      var z = result[i].comment,
@@ -119,7 +119,7 @@ var blogpage = new Vue({
   methods: {
     showComm: function (perm) {
 		comm.length = 0;
-      steem.api.getContentReplies(vblog.login, perm, function(err, result) {
+      golos.api.getContentReplies(vblog.login, perm, function(err, result) {
 	for(var y = result.length;y--;)	{
 					var r = result[y];
 					comm.push({
